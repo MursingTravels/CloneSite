@@ -6,7 +6,7 @@ A modern travel agency website built with Next.js and Tailwind CSS.
 
 First, run the development server:
 
-\`\`\`bash
+\`\`\`bash 
 npm run dev
 # or
 yarn dev
