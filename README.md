@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Deploying to GitHub Pages
 
-1. Push your code to a GitHub repository 
+1. Push your code to a GitHub repository
 2. Go to your repository settings
 3. Navigate to "Pages" in the left sidebar
 4. Select "GitHub Actions" as the source
