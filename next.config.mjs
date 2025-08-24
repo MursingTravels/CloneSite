@@ -1,18 +1,14 @@
+const isProd = process.env.NODE_ENV === 'production'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/CloneSite' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/CloneSite/' : '',
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  // If deploying to a custom domain (like mursingtravels.com), leave basePath/assetPrefix empty
+  assetPrefix: isProd ? '' : '',
+  basePath: isProd ? '' : '',
   images: {
-    unoptimized: true,
+    unoptimized: true, // GitHub Pages doesn't support Next.js image optimization
   },
+  output: 'export', // Required for static export
 }
 
 export default nextConfig
