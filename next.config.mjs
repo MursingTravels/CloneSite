@@ -2,8 +2,8 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/mursing-adventures' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/mursing-adventures/' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/CloneSite' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/CloneSite/' : '',
   eslint: {
     ignoreDuringBuilds: true,
   },
