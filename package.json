@@ -1,10 +1,11 @@
 {
-  "name": "my-v0-project",
+  "name": "mursing-adventures-travel",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "next build",
     "dev": "next dev",
+    "export": "next export",
     "lint": "next lint",
     "start": "next start"
   },
