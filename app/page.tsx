@@ -2,13 +2,19 @@ import { Card } from "@/components/ui/card"
 import { User, Brain, Clock, Gift, DollarSign } from "lucide-react"
 
 export default function Home() {
+  const basePath = process.env.NODE_ENV === "production" ? "/CloneSite" : ""
+
   return (
     <div className="min-h-screen bg-amber-50">
       {/* Header */}
       <header className="text-center py-8">
         <div className="mb-6">
           <div className="mb-4">
-            <img src="/mursing-logo.png" alt="Mursing Adventures Travel Agency Logo" className="w-48 h-auto mx-auto" />
+            <img
+              src={`${basePath}/mursing-logo.png`}
+              alt="Mursing Adventures Travel Agency Logo"
+              className="w-48 h-auto mx-auto"
+            />
           </div>
         </div>
 
@@ -36,7 +42,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="mb-12">
             <img
-              src="/chatgpt-travel-hero.png"
+              src={`${basePath}/chatgpt-travel-hero.png`}
               alt="Travel illustration with landmarks"
               className="mx-auto w-full max-w-2xl"
             />
@@ -124,7 +130,7 @@ export default function Home() {
               >
                 <div className="mb-4">
                   <img
-                    src="/japanese-temple-cherry-blossoms.png"
+                    src={`${basePath}/japanese-temple-cherry-blossoms.png`}
                     alt="Japan destination"
                     className="w-full h-32 object-cover rounded-lg"
                   />
@@ -145,7 +151,7 @@ export default function Home() {
               >
                 <div className="mb-4">
                   <img
-                    src="/caribbean-beach-with-crystal-clear-water-for-scuba.png"
+                    src={`${basePath}/caribbean-beach-with-crystal-clear-water-for-scuba.png`}
                     alt="Grand Cayman destination"
                     className="w-full h-32 object-cover rounded-lg"
                   />
@@ -185,7 +191,7 @@ export default function Home() {
             <div className="text-center">
               <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4">
                 <img
-                  src="/jonah-hobbit-hole-profile.jpg"
+                  src={`${basePath}/jonah-hobbit-hole-profile.jpg`}
                   alt="Jonah - Travel Advisor"
                   className="w-full h-full object-cover"
                 />

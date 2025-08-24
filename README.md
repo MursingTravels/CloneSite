@@ -6,7 +6,7 @@ A modern travel agency website built with Next.js and Tailwind CSS.
 
 First, run the development server:
 
-\`\`\`bash 
+\`\`\`bash
 npm run dev
 # or
 yarn dev
@@ -22,7 +22,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 2. Go to your repository settings
 3. Navigate to "Pages" in the left sidebar
 4. Select "GitHub Actions" as the source
-5. Create a new workflow file `.github/workflows/deploy.yml`: 
+5. Create a new workflow file `.github/workflows/deploy.yml`:
 
 \`\`\`yaml
 name: Deploy to GitHub Pages
