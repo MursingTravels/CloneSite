@@ -1,52 +1,21 @@
-name: Deploy Next.js site to Pages
+import React from 'react';
+import Image from 'next/image';
 
-on:
-  push:
-    branches: ["main"]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
-      - name: Install dependencies
-        run: npm install --no-fund --no-audit
-
-      - name: Build and Export
-        run: |
-          npm run build
-          npm run export
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out   # Upload the static site
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+export default function HomePage() {
+  return (
+    <main style={{ padding: '2rem', textAlign: 'center' }}>
+      <Image
+        src="/mursing-logo.png"
+        alt="Mursing Travels Logo"
+        width={200}
+        height={200}
+      />
+      <h1 style={{ fontSize: '2.5rem', margin: '1rem 0' }}>
+        Welcome to Mursing Travels
+      </h1>
+      <p style={{ fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto' }}>
+        A Premium Travel Agency For Nurses and More
+      </p>
+    </main>
+  );
+}
