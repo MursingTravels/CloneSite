@@ -149,12 +149,12 @@ export default function Home() {
               <div>
                 <h4 className="text-lg sm:text-xl font-bold text-orange-600 mb-1">Instagram</h4>
                 <a
-                  href="https://www.instagram.com/WorldNomadTravelAgency"
+                  href="https://www.instagram.com/WorldNomadTravelAdvisor"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-base sm:text-lg text-teal-700 font-semibold hover:underline"
                 >
-                  @WorldNomadTravelAgency
+                  @WorldNomadTravelAdvisor
                 </a>
               </div>
             </div>
