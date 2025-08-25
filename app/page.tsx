@@ -11,7 +11,7 @@ export default function Home() {
         <div className="mb-6">
           <div className="mb-4">
             <img
-              src={`/public/mursing-logo.png`}
+              src={`/mursing-logo.png`}
               alt="Mursing Adventures Travel Agency Logo"
               className="w-48 h-auto mx-auto"
             />
