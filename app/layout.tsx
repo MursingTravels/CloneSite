@@ -1,22 +1,29 @@
-// app/page.tsx
-import React from 'react';
-import Image from 'next/image';
+import type { Metadata } from 'next'
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
+import './globals.css'
 
-export default function HomePage() {
+export const metadata: Metadata = {
+  title: 'Mursing Travels',
+  description: 'A Premium Travel Agency For Nurses and More',
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
   return (
-    <main style={{ padding: '2rem', textAlign: 'center' }}>
-      <Image
-        src="/mursing-logo.png"
-        alt="Mursing Travels Logo"
-        width={200}
-        height={200}
-      />
-      <h1 style={{ fontSize: '2.5rem', margin: '1rem 0' }}>
-        Welcome to Mursing Travels
-      </h1>
-      <p style={{ fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto' }}>
-        A Premium Travel Agency For Nurses and More
-      </p>
-    </main>
-  );
+    <html lang="en" style={{ fontFamily: GeistSans.style.fontFamily }}>
+      <head>
+        <style>{`
+          :root {
+            --font-sans: ${GeistSans.variable};
+            --font-mono: ${GeistMono.variable};
+          }
+        `}</style>
+      </head>
+      <body>{children}</body>
+    </html>
+  )
 }
