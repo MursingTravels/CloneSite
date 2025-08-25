@@ -1,5 +1,4 @@
 "use client";
-
 import { Card } from "@/components/ui/card"
 import { User, Brain, Clock, Gift, DollarSign } from "lucide-react"
 
