@@ -9,11 +9,13 @@ export default function Home() {
       {/* Header */}
       <header className="text-center py-8 px-4 sm:px-6 lg:px-8">
         <div className="mb-6">
-          <img
-            src="/mursing-logo.png"
-            alt="Mursing Travels Logo"
-            className="w-40 sm:w-48 h-auto mx-auto"
-          />
+          <a href="/">
+            <img
+              src="/mursing-logo.png"
+              alt="Mursing Travels Logo"
+              className="w-40 sm:w-48 h-auto mx-auto"
+            />
+          </a>
         </div>
         <nav className="flex flex-wrap justify-center gap-4 text-teal-700 font-semibold text-sm sm:text-base">
           <a href="#why-advisor" className="hover:text-orange-600">Why?</a>
@@ -137,11 +139,23 @@ export default function Home() {
             <div className="space-y-4 sm:space-y-6 text-center md:text-right">
               <div>
                 <h4 className="text-lg sm:text-xl font-bold text-orange-600 mb-1">Email</h4>
-                <p className="text-base sm:text-lg text-teal-700 font-semibold">Jonah@MursingTravels.com</p>
+                <a
+                  href="mailto:Jonah@MursingTravels.com"
+                  className="text-base sm:text-lg text-teal-700 font-semibold hover:underline"
+                >
+                  Jonah@MursingTravels.com
+                </a>
               </div>
               <div>
                 <h4 className="text-lg sm:text-xl font-bold text-orange-600 mb-1">Instagram</h4>
-                <p className="text-base sm:text-lg text-teal-700 font-semibold">@WorldNomadTravelAgency</p>
+                <a
+                  href="https://www.instagram.com/WorldNomadTravelAgency"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base sm:text-lg text-teal-700 font-semibold hover:underline"
+                >
+                  @WorldNomadTravelAgency
+                </a>
               </div>
             </div>
           </div>
