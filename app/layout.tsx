@@ -1,20 +1,22 @@
-import type { Metadata } from 'next'
-import { GeistSans, GeistMono } from 'geist/font'
-import './globals.css'
+import type { Metadata } from 'next';
+import { GeistSans } from 'geist/font/sans';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Mursing Travels',
   description: 'A Premium Travel Agency For Nurses and More',
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={GeistSans.className}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className={GeistSans.className}>
+        {children}
+      </body>
     </html>
-  )
+  );
 }
