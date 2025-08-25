@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     siteName: "Mursing Travels",
     images: [
       {
-        url: "/mursing-logo.png", // ✅ Put your logo or a nice hero image in /public
+        url: "/mursing-logo.png", // Make sure this is in /public
         width: 1200,
         height: 630,
         alt: "Mursing Travels Logo",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mursing Travels",
     description: "A Premium Travel Agency For Nurses and More",
-    images: ["/mursing-logo.png"], // ✅ Same image as OG or a square one
-    creator: "@WorldNomadTravelAgency", // your Instagram/Twitter handle if you want
+    images: ["/mursing-logo.png"], // Same image as OG or a square one
+    creator: "@WorldNomadTravelAgency", // Optional: your Twitter handle
   },
 }
